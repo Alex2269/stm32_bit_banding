@@ -103,9 +103,8 @@ int main(void)
   //pin_mode(GPIOA, GPIO_PIN_0, GPIO_MODE_INPUT);
   //pin_mode(GPIOA, GPIO_PIN_7, GPIO_MODE_OUTPUT_PP);
   pin_mode(GPIOC, GPIO_PIN_13, GPIO_MODE_OUTPUT_OD); //LED pin
-  /* USER CODE END 2 */
-
   bitband_t led_board = BITBAND_PERIPH(&GPIOC->ODR, 13);
+  /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
